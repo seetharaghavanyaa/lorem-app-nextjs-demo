@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <header className="flex flex-row py-[5px] fixed w-full bg-black z-20 top-0 justify-between px-[10px] pr-[35px]">
         <Logo />
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button onClick={() => setIsOpen(!isOpen)} className="block sm:hidden">
           <Image src={!isOpen ? Icon.menu : Icon.close} height={20} width={20} alt="burger-icon" />
         </button>
       </header>

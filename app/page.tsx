@@ -4,7 +4,7 @@ import ContentModule from "@/app/components/ContentModule";
 
 export default function Home() {
   return (
-    <main className="h-screen w-screen pb-56">
+    <main className="h-screen w-screen pb-56 lg:mt-40">
       {HomePageContent.collections.map((value, index) => (
         <ContentModule {...value} key={`module-index-${index}`} />
       ))}
